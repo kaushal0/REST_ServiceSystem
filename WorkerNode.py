@@ -22,7 +22,6 @@ if __name__ == '__main__':
     while True:
         cyclo = requests.get(cycloURL)
         print("Got Cyclo")
-        print(cyclo.)
         json_data = json.loads(cyclo.text)
         print(json_data)
         print("Received: ",json_data['sha'])
